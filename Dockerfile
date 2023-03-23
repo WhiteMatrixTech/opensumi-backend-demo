@@ -10,8 +10,6 @@ WORKDIR /home/app
 # 将node工程下所有文件拷贝到Image下的文件夹中
 COPY . /home/app
 
-RUN npm i -g yarn
-
 RUN yarn install
 
 EXPOSE 8000
