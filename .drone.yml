@@ -1,0 +1,12 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: docker
+    image: plugins/docker
+    settings:
+      repo: git.xiadd.me/xiadd/opensumi-backend
+      registry: git.xiadd.me
+      username: xiadd
+      password: 6dccd37d4a01d868eb0a54a051e06b0a7c276147
+      tags: latest
